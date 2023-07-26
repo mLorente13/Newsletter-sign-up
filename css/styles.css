@@ -1,99 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    align-items: center;
-    width: 100dvw;
-    height: 100dvh;
-    background-color: hsl(235, 18%, 26%);
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: hsl(235, 18%, 26%);
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
-    display: flex;
-    justify-content: space-between;
-    height: 60%;
-    width: 60%;
-    background-color: #fff;
-    border-radius: 30px;
-    padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: #fff;
 }
 
 .content {
-    margin: 2rem;
+  margin: 2rem;
 }
 
 .title {
-    color: hsl(234, 29%, 20%);
-    font-size: 4rem;
-    margin: 1rem 0;
+  color: hsl(234, 29%, 20%);
+  font-size: 2.75rem;
+  margin: 1rem 0;
 }
 
 .subtitle {
-    width: 85%;
+  width: 85%;
 }
 
 .success-icon {
-    width: 1.25rem;
-    display: inline;
-    margin-right: 10px;
+  width: 1.35rem;
+  display: inline;
+  margin-right: 10px;
 }
 
 .benefit {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .benefit p {
-    margin-left: .5rem;
-    margin: .5rem;
+  margin-left: 0.5rem;
+  margin: 0.5rem;
 }
 
 .aside-img {
-    height: 100%;
+    width: 100%;
 }
 
 aside {
-    margin-left: 2rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 form {
-    width: 87%;
+  width: 100%;
 }
 
 fieldset {
-    border: none;
-    padding: 0;
-    margin: 1rem 0;
+  border: none;
+  padding: 0;
+  margin: .5rem 0;
 }
 
 fieldset > label {
-    color: hsl(234, 29%, 20%);
-    font-weight: bold;
-    display: block;
-    margin: 5px 0;
+  color: hsl(234, 29%, 20%);
+  font-weight: bold;
+  display: block;
+  margin: 5px 0;
 }
 
 .email-input {
-    border: 1px solid hsl(231, 7%, 60%);
-    width: 90%;
-    border-radius: 5px;
-    padding: 1rem;
-    margin: .25rem 0;
-    color: hsl(231, 7%, 60%);
+  border: 1px solid hsl(231, 7%, 60%);
+  width: 94%;
+  border-radius: 10px;
+  padding: 1.2rem 0;
+  padding-left: 1.2rem;
+  font-size: 1.2rem;
+  margin: 0.25rem 0;
+  color: hsl(231, 7%, 60%);
 }
 
 .submit-btn {
-    width: 100%;
-    padding: 1rem;
-    margin: .25rem 0;
-    background-color: hsl(234, 29%, 20%);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    outline: none;
+  width: 100%;
+  padding: 1.2rem;
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+  background-color: hsl(234, 29%, 20%);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  transition: all ease .3s;
+}
+
+.submit-btn:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    flex-direction: row;
+    height: 58%;
+    width: 60%;
+    padding: 25px;
+    border-radius: 30px;
+  }
+
+  aside {
+    height: 100%;
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 2rem;
+  }
+
+  .email-input {
+    width: 75%;
+  }
+
+  .submit-btn {
+    width: 80%;
+  }
 }
