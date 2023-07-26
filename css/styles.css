@@ -94,7 +94,7 @@ fieldset > label {
   padding-left: 1.2rem;
   font-size: 1.2rem;
   margin: 0.25rem 0;
-  color: hsl(231, 7%, 60%);
+  color: hsl(234, 29%, 20%);
 }
 
 .submit-btn {
@@ -114,27 +114,38 @@ fieldset > label {
   background-color: hsl(4, 100%, 67%);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .container {
     flex-direction: row;
     height: 58%;
-    width: 60%;
+    width: 90%;
     padding: 25px;
     border-radius: 30px;
   }
 
   aside {
     height: 100%;
-    width: 40%;
+    width: 70%;
     border-radius: 20px;
     margin-left: 2rem;
   }
 
   .email-input {
-    width: 75%;
+    width: 85%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .submit-btn {
-    width: 80%;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 60%;
   }
 }
