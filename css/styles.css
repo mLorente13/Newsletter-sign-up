@@ -148,4 +148,8 @@ fieldset > label {
   .container {
     width: 60%;
   }
+
+  aside {
+    width: 35%;
+  }
 }
